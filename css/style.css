@@ -1,12 +1,14 @@
 .container {
-    width:50%;
-    display:flex;
-    flex-wrap:wrap;
+  display: grid;
+  grid-template: 100px 100px 100px / 100px 100px 100px;
+  justify-content: center;
+	text-align: center;
 }
 
-.tile {
-    width:23%;
-    padding:5%;
+.item {
+  border-style: solid;
+  border-width: thin;
+  font-size: 80px;
 }
 
 .right {
@@ -15,4 +17,22 @@
 
 .bottom {
     border-bottom: 1px solid black;
+}
+
+body {
+  background: #8adde3;
+  text-align: center;
+
+}
+
+.tile {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+button {
+  border-radius:50%;
+  padding: 18px;
+  background-color:#a0baba;
 }
